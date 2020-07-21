@@ -13,6 +13,7 @@
 		1E5F059224C69CE500F4E781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F059024C69CE500F4E781 /* Main.storyboard */; };
 		1E5F059424C69CE600F4E781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F059324C69CE600F4E781 /* Assets.xcassets */; };
 		1E5F059724C69CE600F4E781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F059524C69CE600F4E781 /* LaunchScreen.storyboard */; };
+		1E5F059F24C69D2300F4E781 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F059E24C69D2300F4E781 /* RandomColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1E5F059324C69CE600F4E781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5F059624C69CE600F4E781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E5F059824C69CE600F4E781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5F059E24C69D2300F4E781 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				1E5F058A24C69CE500F4E781 /* AppDelegate.swift */,
 				1E5F058C24C69CE500F4E781 /* SceneDelegate.swift */,
 				1E5F058E24C69CE500F4E781 /* ViewController.swift */,
+				1E5F059E24C69D2300F4E781 /* RandomColor.swift */,
 				1E5F059024C69CE500F4E781 /* Main.storyboard */,
 				1E5F059324C69CE600F4E781 /* Assets.xcassets */,
 				1E5F059524C69CE600F4E781 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5F059F24C69D2300F4E781 /* RandomColor.swift in Sources */,
 				1E5F058F24C69CE500F4E781 /* ViewController.swift in Sources */,
 				1E5F058B24C69CE500F4E781 /* AppDelegate.swift in Sources */,
 				1E5F058D24C69CE500F4E781 /* SceneDelegate.swift in Sources */,
