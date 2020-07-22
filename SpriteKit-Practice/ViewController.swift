@@ -34,13 +34,7 @@ class PlanetScene: SKScene {
         let field = SKFieldNode.noiseField(withSmoothness: 0, animationSpeed: 0.1)
         scene?.addChild(field)
 
-        planet = Planet(circleOfRadius: circleRadius)
-        planet.strokeColor = .white
-        planet.fillColor = .green
-        planet.physicsBody = SKPhysicsBody(circleOfRadius: circleRadius)
-        planet.physicsBody?.isDynamic = false
-        planet.gravityRange = max(size.width, size.height)
-        planet.gravityMultiplier = 0.005
+        planet = Planet(circleOfRadius: circleRadius, gravityRange: max(size.width, size.height), gravityMultiplier: 0.005)
         addChild(planet)
 
         showElements()
@@ -90,6 +84,22 @@ class Planet: SKShapeNode {
 
     var gravityRange: CGFloat!
     var gravityMultiplier: CGFloat!
+
+    convenience init(circleOfRadius: CGFloat, gravityRange: CGFloat, gravityMultiplier: CGFloat) {
+        self.init(circleOfRadius: circleOfRadius)
+        fillColor = .green
+        strokeColor = .clear
+        physicsBody = SKPhysicsBody(circleOfRadius: circleRadius)
+        physicsBody?.isDynamic = false
+        self.gravityRange = gravityRange
+        self.gravityMultiplier = gravityMultiplier
+
+        let borderNode = SKShapeNode(circleOfRadius: circleOfRadius + 3)
+        borderNode.fillColor = .clear
+        borderNode.strokeColor = .green
+        borderNode.lineWidth = 1
+        addChild(borderNode)
+    }
 
     func updateGravity() {
         for child in children {
