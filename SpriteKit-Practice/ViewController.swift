@@ -86,10 +86,6 @@ class PlanetScene: SKScene {
 
 }
 
-fileprivate let dt: CGFloat = 1.0/60.0 //Delta Time
-fileprivate let period: CGFloat = 10 //Number of seconds it takes to complete 1 orbit.
-fileprivate let orbitRadius = CGPoint(x: 25, y: 25) //Radius of orbit.
-
 class Planet: SKShapeNode {
 
     var gravityRange: CGFloat!
