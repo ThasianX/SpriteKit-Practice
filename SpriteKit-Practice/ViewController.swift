@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
 }
 
-fileprivate let circleCount: Int = 10
+fileprivate let circleCount: Int = 9
 fileprivate let circleRadius: CGFloat = 25
 
 class PlanetScene: SKScene {
@@ -30,6 +30,9 @@ class PlanetScene: SKScene {
     override func didMove(to view: SKView) {
         scene?.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         scene?.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+
+        let field = SKFieldNode.noiseField(withSmoothness: 0, animationSpeed: 0.1)
+        scene?.addChild(field)
 
         planet = Planet(circleOfRadius: circleRadius)
         planet.strokeColor = .white
