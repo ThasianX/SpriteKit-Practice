@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E2B3FD724CCF1BC00D71DA0 /* ElegantTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2B3FD624CCF1BC00D71DA0 /* ElegantTheme.swift */; };
 		1E5F058B24C69CE500F4E781 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F058A24C69CE500F4E781 /* AppDelegate.swift */; };
 		1E5F058D24C69CE500F4E781 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F058C24C69CE500F4E781 /* SceneDelegate.swift */; };
 		1E5F058F24C69CE500F4E781 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F058E24C69CE500F4E781 /* ViewController.swift */; };
 		1E5F059224C69CE500F4E781 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F059024C69CE500F4E781 /* Main.storyboard */; };
 		1E5F059424C69CE600F4E781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F059324C69CE600F4E781 /* Assets.xcassets */; };
 		1E5F059724C69CE600F4E781 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5F059524C69CE600F4E781 /* LaunchScreen.storyboard */; };
-		1E5F059F24C69D2300F4E781 /* RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5F059E24C69D2300F4E781 /* RandomColor.swift */; };
+		1E6FF7ED24CCFF0F00CEF5B3 /* SKShapeNode+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6FF7EC24CCFF0F00CEF5B3 /* SKShapeNode+Additions.swift */; };
+		1E9F25BD24CCC50500402291 /* ColorNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F25BC24CCC50500402291 /* ColorNode.swift */; };
+		1E9F25BF24CCC52200402291 /* ColorsContainerNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F25BE24CCC52200402291 /* ColorsContainerNode.swift */; };
+		1E9F25C124CCC54900402291 /* PlanetScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9F25C024CCC54900402291 /* PlanetScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E2B3FD624CCF1BC00D71DA0 /* ElegantTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegantTheme.swift; sourceTree = "<group>"; };
 		1E5F058724C69CE500F4E781 /* SpriteKit-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpriteKit-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5F058A24C69CE500F4E781 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E5F058C24C69CE500F4E781 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +30,10 @@
 		1E5F059324C69CE600F4E781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E5F059624C69CE600F4E781 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E5F059824C69CE600F4E781 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E5F059E24C69D2300F4E781 /* RandomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomColor.swift; sourceTree = "<group>"; };
+		1E6FF7EC24CCFF0F00CEF5B3 /* SKShapeNode+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKShapeNode+Additions.swift"; sourceTree = "<group>"; };
+		1E9F25BC24CCC50500402291 /* ColorNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNode.swift; sourceTree = "<group>"; };
+		1E9F25BE24CCC52200402291 /* ColorsContainerNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsContainerNode.swift; sourceTree = "<group>"; };
+		1E9F25C024CCC54900402291 /* PlanetScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +68,34 @@
 			children = (
 				1E5F058A24C69CE500F4E781 /* AppDelegate.swift */,
 				1E5F058C24C69CE500F4E781 /* SceneDelegate.swift */,
-				1E5F058E24C69CE500F4E781 /* ViewController.swift */,
-				1E5F059E24C69D2300F4E781 /* RandomColor.swift */,
+				1E9F25C224CCC56C00402291 /* Views */,
+				1E9F25C324CCC57800402291 /* Helpers */,
 				1E5F059024C69CE500F4E781 /* Main.storyboard */,
 				1E5F059324C69CE600F4E781 /* Assets.xcassets */,
 				1E5F059524C69CE600F4E781 /* LaunchScreen.storyboard */,
 				1E5F059824C69CE600F4E781 /* Info.plist */,
 			);
 			path = "SpriteKit-Practice";
+			sourceTree = "<group>";
+		};
+		1E9F25C224CCC56C00402291 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E5F058E24C69CE500F4E781 /* ViewController.swift */,
+				1E9F25C024CCC54900402291 /* PlanetScene.swift */,
+				1E9F25BE24CCC52200402291 /* ColorsContainerNode.swift */,
+				1E9F25BC24CCC50500402291 /* ColorNode.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E9F25C324CCC57800402291 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1E2B3FD624CCF1BC00D71DA0 /* ElegantTheme.swift */,
+				1E6FF7EC24CCFF0F00CEF5B3 /* SKShapeNode+Additions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5F059F24C69D2300F4E781 /* RandomColor.swift in Sources */,
+				1E9F25BD24CCC50500402291 /* ColorNode.swift in Sources */,
 				1E5F058F24C69CE500F4E781 /* ViewController.swift in Sources */,
 				1E5F058B24C69CE500F4E781 /* AppDelegate.swift in Sources */,
+				1E2B3FD724CCF1BC00D71DA0 /* ElegantTheme.swift in Sources */,
 				1E5F058D24C69CE500F4E781 /* SceneDelegate.swift in Sources */,
+				1E6FF7ED24CCFF0F00CEF5B3 /* SKShapeNode+Additions.swift in Sources */,
+				1E9F25C124CCC54900402291 /* PlanetScene.swift in Sources */,
+				1E9F25BF24CCC52200402291 /* ColorsContainerNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
