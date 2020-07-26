@@ -17,8 +17,9 @@ class ColorNode: SKShapeNode {
 
     private lazy var nameNode: SKLabelNode = {
         let node = SKLabelNode(text: theme.name)
+        node.fontName = "SanFranciscoDisplay-Regular"
         node.fontSize = 17
-        node.color = .white
+        node.fontColor = .white
         node.verticalAlignmentMode = .top
         node.position.y -= (radius + nameTopPadding)
         node.zPosition = 5

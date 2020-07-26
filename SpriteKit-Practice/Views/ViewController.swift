@@ -10,8 +10,6 @@ class ViewController: UIViewController {
 
         let scene = PlanetScene(size: view.bounds.size)
         let skView = view as! SKView
-        skView.showsFPS = true
-        skView.showsNodeCount = true
 
         scene.scaleMode = .resizeFill
         scene.anchorPoint = .init(x: 0.5, y: 0.5)
