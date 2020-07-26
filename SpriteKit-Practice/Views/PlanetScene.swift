@@ -3,7 +3,7 @@
 import SpriteKit
 import UIKit
 
-let circleCount: Int = 10
+let circleCount: Int = 20
 let circleRadius: CGFloat = 25
 
 class InteractionState {
@@ -37,11 +37,12 @@ class PlanetScene: SKScene {
     private func configureScenePhysics() {
         scene?.physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
         scene?.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        backgroundColor = .black
     }
 
     private func addColorNodesToContainer() {
-        for _ in 0..<circleCount {
-            let colorNode = ColorNode(circleOfRadius: circleRadius, theme: .random)
+        for theme in ElegantTheme.allThemes {
+            let colorNode = ColorNode(circleOfRadius: circleRadius, theme: theme)
             containerNode.addChild(colorNode)
 
             colorNode.position = CGPoint(

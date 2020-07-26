@@ -43,6 +43,7 @@ class ColorsContainerNode: SKNode {
             let circularVector = CGVector(dx: (invertedDistanceVector.dx + radiusVector.dx) * gravityMultiplier,
                                           dy: (invertedDistanceVector.dy + radiusVector.dy) * gravityMultiplier)
             // TODO: make this more variable such that it's not just the same circular pattern
+            // TODO: fix some nodes in the beginning that don't move
             child.physicsBody?.applyForce(circularVector)
         }
     }
