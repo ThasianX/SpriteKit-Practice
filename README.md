@@ -4,4 +4,4 @@ After experimenting a bit with SpriteKit, I've finally got a feel for making the
 
 Note: code is a bit messy in this practice repo :Z
 
-<img src="https://github.com/ThasianX/GIFs/blob/master/ElegantColorPicker/practice_demo.gif?raw=true"/>
+<img src="https://github.com/ThasianX/GIFs/blob/master/ElegantColorPalette/practice_demo.gif?raw=true"/>
